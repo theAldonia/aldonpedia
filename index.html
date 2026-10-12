@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101923" />
+  <title>Aldonpedia — Scientia omnibus, insania quibusdam.</title>
+  <style>
+    :root { color-scheme: dark; --ink:#f1eadc; --muted:#b4b7b8; --gold:#d7b879; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100svh; display:grid; place-items:center; padding:28px; background:radial-gradient(ellipse at 50% 25%,#283949 0%,#131d28 52%,#0c1219 100%); color:var(--ink); font-family:Georgia,'Times New Roman',serif; }
+    main { width:min(100%,920px); text-align:center; border:1px solid #d7b87955; padding:clamp(32px,8vw,90px) clamp(18px,5vw,65px); position:relative; background:#10192366; box-shadow:0 25px 100px #0005; }
+    main::before,main::after {content:'✦';position:absolute;left:50%;transform:translateX(-50%);color:var(--gold);font-size:16px;}
+    main::before {top:18px;} main::after {bottom:18px;}
+    .eyebrow {font:600 12px/1.5 system-ui,sans-serif;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin:0 0 36px;}
+    h1 {font-weight:400;font-size:clamp(36px,6.8vw,74px);line-height:1.19;letter-spacing:-.035em;margin:0 auto 26px;max-width:800px;text-wrap:balance;}
+    .rule {height:1px;width:110px;background:var(--gold);margin:32px auto;opacity:.75;}
+    .translation {font:400 clamp(17px,2.4vw,23px)/1.8 'Noto Serif CJK SC','Songti SC','SimSun',serif;letter-spacing:.11em;margin:0;color:#e0d6c4;}
+    .subtitle {font:400 12px/1.8 system-ui,sans-serif;color:var(--muted);letter-spacing:.12em;margin-top:38px;}
+    a {color:var(--gold);text-decoration:none;} a:hover{text-decoration:underline;}
+    @media (prefers-reduced-motion:no-preference) {main {animation:appear .8s ease-out both;} @keyframes appear {from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}}
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Aldonpedia · Libera Encyclopaedia</p>
+    <h1 lang="la">Scientia omnibus,<br>insania quibusdam.</h1>
+    <div class="rule" aria-hidden="true"></div>
+    <p class="translation">知识属于所有人，疯狂属于一些人。</p>
+    <p class="subtitle">ALDONPEDIA · <a href="https://aldonia.uk">ALDONIA.UK</a></p>
+  </main>
+</body>
+</html>
